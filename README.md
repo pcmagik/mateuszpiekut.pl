@@ -1,2 +1,2 @@
-## Moje CV
+## Wy Website Resume
 
