@@ -604,6 +604,9 @@
 	.banner-info h2 {
 		font-size: 48px;
 		line-height: 38px;
+	#	color: #000000; /* Zmieniony kolor na czerwony */
+		background-color: rgba(255, 255, 255, 0.7); /* Dodane tło z przezroczystością */
+		padding: 10px; /* Dodane wypełnienie dla lepszej czytelności */
 	}
 	.banner-info h3 {
 		letter-spacing: 8px;
