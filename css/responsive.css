@@ -94,7 +94,7 @@
 	}
 	.banner-content .banner-info {
 		top: 100%;
-		margin-top: -220px;
+		margin-top: -380px;
 	}
 	#navigation .navbar:before {
 		width: 200%;
@@ -280,13 +280,16 @@
 	}
 	.banner-info {
 		bottom: 30px;
+		top: 70% !important;
+		
 	}
 	.banner-info h1 {
 		font-size: 30px;
+		
 	}
 	.banner-info h2 {
 		font-size: 50px;
-		line-height: 25px;
+		
 	}
 	.banner-info h3 {
 		font-size: 14px;
