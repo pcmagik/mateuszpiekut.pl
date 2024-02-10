@@ -47,14 +47,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: #2d3038;
     margin-top: 10px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;    
 }
-
-.banner-info h2 {
-    line-height: 110px !important;
-}
-
-
 
 
 ul {
