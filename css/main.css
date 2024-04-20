@@ -1486,8 +1486,9 @@ h3.widget_title {
 	border-bottom: 1px solid #f0f0f0;
 }
 
-.widget ul {
-}
+/* After */
+/* .widget ul {
+} */
 
 .widget ul li {
 	padding: 7px 0;
