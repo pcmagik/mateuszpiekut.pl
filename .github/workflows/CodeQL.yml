@@ -13,8 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3 # Aktualizacja do najnowszej wersji
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Aktualizacja do Node.js wersji 20
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
+        uses: github/codeql-action/init@v3 # Aktualizacja do wersji v3
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+        uses: github/codeql-action/analyze@v3 # Aktualizacja do wersji v3
