@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "Analyze code with CodeQL"
 on:
   push:
     branches: [ main ]
@@ -11,14 +11,17 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write  # Dodanie uprawnień do zapisu zdarzeń bezpieczeństwa
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3 # Aktualizacja do najnowszej wersji
-      - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/checkout@v3  # Aktualizacja do wersji używającej Node.js 20
+      - name: Setup Node.js
+        uses: actions/setup-node@v3  # Zaktualizowano do wersji wspierającej Node.js 20
         with:
-          node-version: '20' # Aktualizacja do Node.js wersji 20
+          node-version: '20'
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3 # Aktualizacja do wersji v3
+        uses: github/codeql-action/init@v3  # Aktualizacja do v3
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3 # Aktualizacja do wersji v3
+        uses: github/codeql-action/analyze@v3  # Aktualizacja do v3
