@@ -19,11 +19,10 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: '3.0'  # Użycie wersji Ruby zgodnej z wymaganiami najnowszych gemów
 
       - name: Install dependencies
         run: gem install html-proofer
 
       - name: Check HTML
         run: htmlproofer ./ --allow-hash-href --check-html --http-status-ignore "999"
-
