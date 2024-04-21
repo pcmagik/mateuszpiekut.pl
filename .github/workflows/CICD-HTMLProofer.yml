@@ -14,12 +14,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Aktualizacja do najnowszej wersji
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Określenie wersji Node.js na 20
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # Użycie Ruby 3.0
+          ruby-version: '3.0'
 
       - name: Install HTMLProofer
         run: gem install html-proofer
