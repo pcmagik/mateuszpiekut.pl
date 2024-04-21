@@ -36,7 +36,7 @@ jobs:
         uses: actions/configure-pages@v3  # Zaktualizuj, jeśli istnieje nowsza wersja
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3  # Zaktualizowano do v4 zgodnie z zaleceniami
+        uses: actions/upload-pages-artifact@v2  # Zaktualizowano do v4 zgodnie z zaleceniami
 
       - name: Deploy to GitHub Pages
         id: deployment
